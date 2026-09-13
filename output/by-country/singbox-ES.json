@@ -6,22 +6,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - wwc503",
+        "🇪🇸 西班牙 (Spain) 02 - wwc503",
+        "🇪🇸 西班牙 (Spain) 03 - wwc503",
+        "🇪🇸 西班牙 (Spain) 04 - wwc503",
+        "🇪🇸 西班牙 (Spain) 05 - wwc503",
+        "🇪🇸 西班牙 (Spain) 06 - wwc503",
+        "🇪🇸 西班牙 (Spain) 07 - wwc503",
+        "🇪🇸 西班牙 (Spain) 08 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 01 - wwc503",
+        "🇪🇸 西班牙 (Spain) 02 - wwc503",
+        "🇪🇸 西班牙 (Spain) 03 - wwc503",
+        "🇪🇸 西班牙 (Spain) 04 - wwc503",
+        "🇪🇸 西班牙 (Spain) 05 - wwc503",
+        "🇪🇸 西班牙 (Spain) 06 - wwc503",
+        "🇪🇸 西班牙 (Spain) 07 - wwc503",
+        "🇪🇸 西班牙 (Spain) 08 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -6,18 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 ZA 01 - xiaohe",
-        "🇿🇦 ZA 02 - xiaohe",
-        "🇿🇦 ZA 03 - xiaohe"
+        "🇿🇦 ZA 01 - wwc503",
+        "🇿🇦 ZA 02 - wwc503",
+        "🇿🇦 ZA 03 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 ZA 01 - xiaohe",
-        "🇿🇦 ZA 02 - xiaohe",
-        "🇿🇦 ZA 03 - xiaohe"
+        "🇿🇦 ZA 01 - wwc503",
+        "🇿🇦 ZA 02 - wwc503",
+        "🇿🇦 ZA 03 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

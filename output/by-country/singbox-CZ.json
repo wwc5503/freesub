@@ -6,16 +6,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - xiaohe",
-        "🇨🇿 CZ 02 - xiaohe"
+        "🇨🇿 CZ 01 - wwc503",
+        "🇨🇿 CZ 02 - wwc503",
+        "🇨🇿 CZ 03 - wwc503",
+        "🇨🇿 CZ 04 - wwc503",
+        "🇨🇿 CZ 05 - wwc503",
+        "🇨🇿 CZ 06 - wwc503",
+        "🇨🇿 CZ 07 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - xiaohe",
-        "🇨🇿 CZ 02 - xiaohe"
+        "🇨🇿 CZ 01 - wwc503",
+        "🇨🇿 CZ 02 - wwc503",
+        "🇨🇿 CZ 03 - wwc503",
+        "🇨🇿 CZ 04 - wwc503",
+        "🇨🇿 CZ 05 - wwc503",
+        "🇨🇿 CZ 06 - wwc503",
+        "🇨🇿 CZ 07 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

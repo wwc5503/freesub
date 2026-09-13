@@ -6,18 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe"
+        "🇮🇳 印度 (India) 01 - wwc503",
+        "🇮🇳 印度 (India) 02 - wwc503",
+        "🇮🇳 印度 (India) 03 - wwc503",
+        "🇮🇳 印度 (India) 04 - wwc503",
+        "🇮🇳 印度 (India) 05 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - xiaohe",
-        "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe"
+        "🇮🇳 印度 (India) 01 - wwc503",
+        "🇮🇳 印度 (India) 02 - wwc503",
+        "🇮🇳 印度 (India) 03 - wwc503",
+        "🇮🇳 印度 (India) 04 - wwc503",
+        "🇮🇳 印度 (India) 05 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -6,16 +6,30 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - xiaohe",
-        "🇪🇪 EE 02 - xiaohe"
+        "🇪🇪 EE 01 - wwc503",
+        "🇪🇪 EE 02 - wwc503",
+        "🇪🇪 EE 03 - wwc503",
+        "🇪🇪 EE 04 - wwc503",
+        "🇪🇪 EE 05 - wwc503",
+        "🇪🇪 EE 06 - wwc503",
+        "🇪🇪 EE 07 - wwc503",
+        "🇪🇪 EE 08 - wwc503",
+        "🇪🇪 EE 09 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - xiaohe",
-        "🇪🇪 EE 02 - xiaohe"
+        "🇪🇪 EE 01 - wwc503",
+        "🇪🇪 EE 02 - wwc503",
+        "🇪🇪 EE 03 - wwc503",
+        "🇪🇪 EE 04 - wwc503",
+        "🇪🇪 EE 05 - wwc503",
+        "🇪🇪 EE 06 - wwc503",
+        "🇪🇪 EE 07 - wwc503",
+        "🇪🇪 EE 08 - wwc503",
+        "🇪🇪 EE 09 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

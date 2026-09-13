@@ -4,40 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - xiaohe
+- name: 🇵🇱 PL 01 - wwc503
   type: ss
   server: 194.61.121.93
   port: 7538
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-- name: 🇵🇱 PL 02 - xiaohe
+- name: 🇵🇱 PL 02 - wwc503
   type: vless
-  server: 94.183.209.58
+  server: 104.25.22.24
   port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 03 - xiaohe
-  type: vless
-  server: 94.183.209.58
-  port: 443
-  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.209.58
-- name: 🇵🇱 PL 04 - xiaohe
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 03 - wwc503
   type: vless
   server: 94.183.209.59
   port: 443
@@ -50,23 +38,158 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
+- name: 🇵🇱 PL 04 - wwc503
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 05 - wwc503
+  type: vless
+  server: 104.17.247.68
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 06 - wwc503
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 07 - wwc503
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 08 - wwc503
+  type: vless
+  server: 104.25.146.77
+  port: 443
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: khoda.ak-khoda.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 PL 09 - wwc503
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 10 - wwc503
+  type: vless
+  server: 94.183.209.59
+  port: 443
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.59
+- name: 🇵🇱 PL 11 - wwc503
+  type: vless
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
+- name: 🇵🇱 PL 12 - wwc503
+  type: vless
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
+  - 🇵🇱 PL 01 - wwc503
+  - 🇵🇱 PL 02 - wwc503
+  - 🇵🇱 PL 03 - wwc503
+  - 🇵🇱 PL 04 - wwc503
+  - 🇵🇱 PL 05 - wwc503
+  - 🇵🇱 PL 06 - wwc503
+  - 🇵🇱 PL 07 - wwc503
+  - 🇵🇱 PL 08 - wwc503
+  - 🇵🇱 PL 09 - wwc503
+  - 🇵🇱 PL 10 - wwc503
+  - 🇵🇱 PL 11 - wwc503
+  - 🇵🇱 PL 12 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
-  - 🇵🇱 PL 03 - xiaohe
-  - 🇵🇱 PL 04 - xiaohe
+  - 🇵🇱 PL 01 - wwc503
+  - 🇵🇱 PL 02 - wwc503
+  - 🇵🇱 PL 03 - wwc503
+  - 🇵🇱 PL 04 - wwc503
+  - 🇵🇱 PL 05 - wwc503
+  - 🇵🇱 PL 06 - wwc503
+  - 🇵🇱 PL 07 - wwc503
+  - 🇵🇱 PL 08 - wwc503
+  - 🇵🇱 PL 09 - wwc503
+  - 🇵🇱 PL 10 - wwc503
+  - 🇵🇱 PL 11 - wwc503
+  - 🇵🇱 PL 12 - wwc503
 rules:
 - MATCH,PROXIES
