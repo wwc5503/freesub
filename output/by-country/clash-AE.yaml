@@ -6,7 +6,20 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - wwc503
   type: vless
-  server: 84.235.244.108
+  server: 45.130.125.201
+  port: 80
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - wwc503
+  type: vless
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -17,102 +30,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 02 - wwc503
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - wwc503
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 04 - wwc503
-  type: vless
-  server: 128.241.25.3
-  port: 30021
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - wwc503
-  type: vless
-  server: 128.241.25.11
-  port: 30021
-  uuid: 72fbb611-628d-4afa-8198-bda3e38021f9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 06 - wwc503
-  type: vless
-  server: 45.131.66.247
-  port: 20002
-  uuid: 88657f55-7478-435f-bcab-f3f803060227
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 07 - wwc503
-  type: vless
-  server: 213.176.112.136
-  port: 5222
-  uuid: 8d955d71-ed5d-4f4c-ae68-42d120f06861
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 08 - wwc503
-  type: vless
-  server: 172.237.12.208
-  port: 18836
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -120,12 +37,6 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - wwc503
   - 🇦🇪 阿联酋 (UAE) 02 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 03 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 04 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 05 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 06 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 07 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 08 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -133,11 +44,5 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - wwc503
   - 🇦🇪 阿联酋 (UAE) 02 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 03 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 04 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 05 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 06 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 07 - wwc503
-  - 🇦🇪 阿联酋 (UAE) 08 - wwc503
 rules:
 - MATCH,PROXIES
