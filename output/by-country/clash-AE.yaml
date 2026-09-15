@@ -19,6 +19,56 @@ proxies:
       Host: nahan-core.netizo09.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - wwc503
   type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03 - wwc503
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 04 - wwc503
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 05 - wwc503
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 06 - wwc503
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -30,6 +80,59 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - wwc503
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - wwc503
+  type: vless
+  server: 104.17.169.13
+  port: 2053
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇦🇪 阿联酋 (UAE) 09 - wwc503
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - wwc503
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: summer-hill-7f65.275-521.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +140,14 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - wwc503
   - 🇦🇪 阿联酋 (UAE) 02 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 03 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 04 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 05 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 06 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 07 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 08 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 09 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 10 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +155,13 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - wwc503
   - 🇦🇪 阿联酋 (UAE) 02 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 03 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 04 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 05 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 06 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 07 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 08 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 09 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 10 - wwc503
 rules:
 - MATCH,PROXIES

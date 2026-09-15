@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wwc503
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   type: vless
   server: 185.148.106.50
   port: 8880
@@ -17,7 +24,7 @@ proxies:
     path: /
     headers:
       Host: vms.lifetime54.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 02 - wwc503
+- name: 🇷🇺 俄罗斯 (Russia) 03 - wwc503
   type: vless
   server: 46.8.200.91
   port: 443
@@ -31,20 +38,13 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 03 - wwc503
-  type: vless
-  server: 78.159.247.246
-  port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+- name: 🇷🇺 俄罗斯 (Russia) 04 - wwc503
+  type: ss
+  server: 46.17.42.166
+  port: 50111
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sb2.hat.onl
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sb2.hat.onl
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +53,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 03 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 04 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +62,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 03 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 04 - wwc503
 rules:
 - MATCH,PROXIES

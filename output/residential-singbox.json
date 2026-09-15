@@ -6,20 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - wwc503",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - wwc503",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wwc503",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wwc503"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wwc503",
+        "🇳🇱 荷兰 (Netherlands) 02 (家宽) - wwc503",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - wwc503",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - wwc503",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - wwc503",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - wwc503",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wwc503",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - wwc503"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wwc503",
+        "🇳🇱 荷兰 (Netherlands) 02 (家宽) - wwc503",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - wwc503",
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - wwc503",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

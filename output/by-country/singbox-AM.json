@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - wwc503"
+        "🇦🇲 AM 01 - wwc503",
+        "🇦🇲 AM 02 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - wwc503"
+        "🇦🇲 AM 01 - wwc503",
+        "🇦🇲 AM 02 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },
