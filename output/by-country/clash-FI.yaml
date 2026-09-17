@@ -5,99 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - wwc503
-  type: ss
-  server: 65.109.215.118
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
+    headers:
+      Host: c12.com
 - name: 🇫🇮 FI 02 - wwc503
   type: vless
-  server: 151.101.56.6
+  server: a2.arshia-nova.ir
   port: 443
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: global.fastly.com
+  servername: ssl.fastly.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: kayko.global.ssl.fastly.net
+      Host: c12.com
 - name: 🇫🇮 FI 03 - wwc503
   type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 04 - wwc503
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 05 - wwc503
-  type: vless
-  server: 172.64.52.230
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇫🇮 FI 06 - wwc503
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: f570779f-bbf7-4ef9-e657-8ebbdef2609b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: //---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 07 - wwc503
-  type: vless
-  server: 172.64.52.182
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇫🇮 FI 08 - wwc503
-  type: vless
-  server: 104.16.150.108
+  server: 104.19.215.97
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
@@ -117,11 +54,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - wwc503
   - 🇫🇮 FI 02 - wwc503
   - 🇫🇮 FI 03 - wwc503
-  - 🇫🇮 FI 04 - wwc503
-  - 🇫🇮 FI 05 - wwc503
-  - 🇫🇮 FI 06 - wwc503
-  - 🇫🇮 FI 07 - wwc503
-  - 🇫🇮 FI 08 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -130,10 +62,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - wwc503
   - 🇫🇮 FI 02 - wwc503
   - 🇫🇮 FI 03 - wwc503
-  - 🇫🇮 FI 04 - wwc503
-  - 🇫🇮 FI 05 - wwc503
-  - 🇫🇮 FI 06 - wwc503
-  - 🇫🇮 FI 07 - wwc503
-  - 🇫🇮 FI 08 - wwc503
 rules:
 - MATCH,PROXIES

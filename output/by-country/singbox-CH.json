@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - wwc503",
-        "🇨🇭 CH 02 - wwc503",
-        "🇨🇭 CH 03 - wwc503",
-        "🇨🇭 CH 04 - wwc503",
-        "🇨🇭 CH 05 - wwc503"
+        "🇨🇭 CH 01 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - wwc503",
-        "🇨🇭 CH 02 - wwc503",
-        "🇨🇭 CH 03 - wwc503",
-        "🇨🇭 CH 04 - wwc503",
-        "🇨🇭 CH 05 - wwc503"
+        "🇨🇭 CH 01 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },
