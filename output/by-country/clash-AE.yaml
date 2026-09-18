@@ -6,30 +6,29 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - wwc503
   type: vless
-  server: 45.130.125.201
+  server: cdn.snobvpn.online
   port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sync
+    path: /snob-ws
     headers:
-      Host: nahan-core.netizo09.workers.dev
+      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 02 - wwc503
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 03 - wwc503
   type: vless
   server: uae.unixzone.us
@@ -54,7 +53,7 @@ proxies:
   reality-opts:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 05 - wwc503
   type: vless
   server: uae.unixzone.us
@@ -70,16 +69,17 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06 - wwc503
   type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 07 - wwc503
   type: vless
   server: 84.235.244.108
@@ -95,17 +95,30 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - wwc503
   type: vless
-  server: 92.53.189.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 09 - wwc503
+  type: vless
+  server: apicdn.4subnodes.com
+  port: 443
+  uuid: 1f959100-a98b-47fb-84fa-359246dc458a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: apicdn.4subnodes.com
   network: ws
   ws-opts:
-    path: /
+    path: /apiv1/esa1-asda2jcvnbpseflkn-kjweksad
     headers:
-      Host: vms.lifetime19.workers.dev
+      Host: apicdn.4subnodes.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,6 +132,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - wwc503
   - 🇦🇪 阿联酋 (UAE) 07 - wwc503
   - 🇦🇪 阿联酋 (UAE) 08 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 09 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -132,5 +146,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - wwc503
   - 🇦🇪 阿联酋 (UAE) 07 - wwc503
   - 🇦🇪 阿联酋 (UAE) 08 - wwc503
+  - 🇦🇪 阿联酋 (UAE) 09 - wwc503
 rules:
 - MATCH,PROXIES

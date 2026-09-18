@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - wwc503"
+        "🇸🇮 SI 01 - wwc503",
+        "🇸🇮 SI 02 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 (家宽) - wwc503"
+        "🇸🇮 SI 01 - wwc503",
+        "🇸🇮 SI 02 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },
