@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇺 LU 01 - wwc503
   type: vless
-  server: 188.42.145.123
+  server: 104.21.117.9
   port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  uuid: 0926b50d-3a90-18dd-7c8e-0cf100000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
+  servername: netlivpn4024.bgfjhd.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: netlivpn4024.bgfjhd.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

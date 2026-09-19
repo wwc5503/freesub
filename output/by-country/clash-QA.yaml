@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇦 BA 01 - wwc503
+- name: 🇶🇦 QA 01 - wwc503
   type: vless
-  server: 77.74.228.123
+  server: 34.18.31.5
   port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: notls.lukongtou.eu.org
+  reality-opts:
+    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇦 BA 01 - wwc503
+  - 🇶🇦 QA 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇦 BA 01 - wwc503
+  - 🇶🇦 QA 01 - wwc503
 rules:
 - MATCH,PROXIES
