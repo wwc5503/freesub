@@ -6,77 +6,30 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - wwc503
   type: vless
-  server: 172.65.90.53
-  port: 8880
-  uuid: a5c7e18f-1701-46ed-8f42-00eb078d9445
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: weathered-snow-b87b.292-455.workers.dev
+  reality-opts:
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 02 - wwc503
   type: vless
-  server: 104.17.26.45
+  server: 172.67.174.37
   port: 8880
-  uuid: 2e9012a2-7f8c-4233-b78b-5228a9a4951b
+  uuid: 0787cfdb-9930-4abb-8419-c1b96c3ef628
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /%2Fpyip%3DProxyIP.KR.CMLiussss.net
+    path: /
     headers:
-      Host: icy-breeze-126c.211-eb3.workers.dev
+      Host: red-snowflake-c399.12-ee1.workers.dev
 - name: 🇰🇷 韩国 (South Korea) 03 - wwc503
-  type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: patient-cake-39c7.44-e7a.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 04 - wwc503
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - wwc503
-  type: vless
-  server: 172.66.132.196
-  port: 8880
-  uuid: 2efeba50-78fe-4729-9821-1fb9819ed9e8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dark-dew-c3ed.48-97c.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 06 - wwc503
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 - wwc503
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -88,7 +41,21 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - wwc503
+- name: 🇰🇷 韩国 (South Korea) 04 - wwc503
+  type: vless
+  server: 188.114.97.6
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 05 - wwc503
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -100,7 +67,81 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 06 - wwc503
+  type: vless
+  server: 211.48.30.184
+  port: 30017
+  uuid: beec57a5-8266-4279-b279-f495bdc70699
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 07 - wwc503
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - wwc503
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 09 - wwc503
+  type: vless
+  server: www.gov.ua
+  port: 8880
+  uuid: e974d4c7-2376-4b65-aa40-0680961ff5e4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: icy-unit-58dc.157-59c.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 10 - wwc503
+  type: vless
+  server: 104.18.42.54
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 11 - wwc503
+  type: vless
+  server: 172.66.170.53
+  port: 8880
+  uuid: 38ede46b-d237-4c76-9de1-a10738642adc
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: summer-hat-ba5c.430.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 12 - wwc503
   type: vless
   server: 172.64.88.251
   port: 8880
@@ -113,24 +154,7 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: dry-credit-fc26.203-d8c.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 10 - wwc503
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 11 - wwc503
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - wwc503
+- name: 🇰🇷 韩国 (South Korea) 13 - wwc503
   type: vless
   server: 188.114.97.6
   port: 443
@@ -144,21 +168,23 @@ proxies:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
       Host: yellow-hall-d482.260-d22.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 13 - wwc503
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 14 - wwc503
   type: vless
-  server: 172.66.170.53
+  server: 34.64.149.137
+  port: 443
+  uuid: 700a7a0e-3f27-406c-81d1-aa1abe411af8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kqIDhDhYFrXD-1GeurwjzFwbB0zWipgWmcbADXwmyy8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 15 - wwc503
+  type: vless
+  server: 172.64.88.251
   port: 8880
-  uuid: 38ede46b-d237-4c76-9de1-a10738642adc
+  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
   udp: true
   tls: false
   skip-cert-verify: true
@@ -166,7 +192,70 @@ proxies:
   ws-opts:
     path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: summer-hat-ba5c.430.workers.dev
+      Host: patient-cake-39c7.44-e7a.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 16 - wwc503
+  type: vless
+  server: 104.16.150.108
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 17 - wwc503
+  type: vless
+  server: 172.64.146.228
+  port: 443
+  uuid: f5851a6e-72da-4e4e-99b2-c79629149503
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: d24e02c6.69lover.site
+  network: ws
+  ws-opts:
+    path: /api/v2/e916944b060a3543/stream
+    headers:
+      Host: d24e02c6.69lover.site
+- name: 🇰🇷 韩国 (South Korea) 18 - wwc503
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 19 - wwc503
+  type: vless
+  server: 104.16.150.246
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 20 - wwc503
+  type: vless
+  server: 172.64.53.87
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -186,6 +275,12 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - wwc503
   - 🇰🇷 韩国 (South Korea) 13 - wwc503
   - 🇰🇷 韩国 (South Korea) 14 - wwc503
+  - 🇰🇷 韩国 (South Korea) 15 - wwc503
+  - 🇰🇷 韩国 (South Korea) 16 - wwc503
+  - 🇰🇷 韩国 (South Korea) 17 - wwc503
+  - 🇰🇷 韩国 (South Korea) 18 - wwc503
+  - 🇰🇷 韩国 (South Korea) 19 - wwc503
+  - 🇰🇷 韩国 (South Korea) 20 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -205,5 +300,11 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 12 - wwc503
   - 🇰🇷 韩国 (South Korea) 13 - wwc503
   - 🇰🇷 韩国 (South Korea) 14 - wwc503
+  - 🇰🇷 韩国 (South Korea) 15 - wwc503
+  - 🇰🇷 韩国 (South Korea) 16 - wwc503
+  - 🇰🇷 韩国 (South Korea) 17 - wwc503
+  - 🇰🇷 韩国 (South Korea) 18 - wwc503
+  - 🇰🇷 韩国 (South Korea) 19 - wwc503
+  - 🇰🇷 韩国 (South Korea) 20 - wwc503
 rules:
 - MATCH,PROXIES
