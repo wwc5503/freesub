@@ -6,14 +6,32 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - wwc503"
+        "🇦🇪 阿联酋 (UAE) 01 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 02 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 03 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 04 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 05 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 06 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 07 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 08 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 09 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 10 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - wwc503"
+        "🇦🇪 阿联酋 (UAE) 01 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 02 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 03 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 04 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 05 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 06 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 07 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 08 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 09 - wwc503",
+        "🇦🇪 阿联酋 (UAE) 10 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇱🇻 LV 01 - wwc503
   type: vless
-  server: atomic-prase23893.my-vm.work
-  port: 8088
-  uuid: f7c74a35-1da0-5097-9fa7-a20735610ac1
+  server: 104.25.217.189
+  port: 443
+  uuid: 7a657573-627d-c5d7-4e7b-9e260f5cfff1
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: imzajnekupas.a3-60-morteza.workers.dev
   network: ws
   ws-opts:
-    path: /api
+    path: /stream/PANEL_ZEUS/9e260f5cfff1/loc-0
     headers:
-      Host: queuev4.vk.com
+      Host: imzajnekupas.a3-60-morteza.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
