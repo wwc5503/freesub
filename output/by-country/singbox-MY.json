@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - wwc503"
+        "🇲🇾 MY 01 - wwc503",
+        "🇲🇾 MY 02 - wwc503",
+        "🇲🇾 MY 03 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - wwc503"
+        "🇲🇾 MY 01 - wwc503",
+        "🇲🇾 MY 02 - wwc503",
+        "🇲🇾 MY 03 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },
