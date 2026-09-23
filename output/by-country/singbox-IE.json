@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - wwc503",
-        "🇮🇶 IQ 02 - wwc503"
+        "🇮🇪 IE 01 - wwc503",
+        "🇮🇪 IE 02 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - wwc503",
-        "🇮🇶 IQ 02 - wwc503"
+        "🇮🇪 IE 01 - wwc503",
+        "🇮🇪 IE 02 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

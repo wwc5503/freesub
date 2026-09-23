@@ -4,26 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 LK 01 - wwc503
+- name: 🇳🇴 NO 01 - wwc503
   type: vless
-  server: 140.245.102.107
-  port: 119
-  uuid: a5da154b-4632-4fc4-8fcb-9495fe195b1b
+  server: 46.29.238.88
+  port: 40443
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wom.co
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+  servername: deepl.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 LK 01 - wwc503
+  - 🇳🇴 NO 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 LK 01 - wwc503
+  - 🇳🇴 NO 01 - wwc503
 rules:
 - MATCH,PROXIES
