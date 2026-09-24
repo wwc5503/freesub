@@ -4,31 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 IS 01 - wwc503
+- name: 🇱🇰 LK 01 - wwc503
   type: vless
-  server: 151.243.181.99
+  server: free.sahanwickramasinghe.me
   port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
+  servername: aka.ms
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 IS 01 - wwc503
+  - 🇱🇰 LK 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 IS 01 - wwc503
+  - 🇱🇰 LK 01 - wwc503
 rules:
 - MATCH,PROXIES

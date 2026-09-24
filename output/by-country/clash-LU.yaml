@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - wwc503
+- name: 🇱🇺 LU 01 - wwc503
   type: vless
-  server: 108.165.233.223
+  server: 104.21.117.9
   port: 443
-  uuid: 2388e166-3890-33ae-f77e-efac00000001
+  uuid: 0926b50d-3a90-18dd-7c8e-0cf100000000
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
+  servername: netlivpn4024.bgfjhd.workers.dev
   network: ws
   ws-opts:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
+      Host: netlivpn4024.bgfjhd.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - wwc503
+  - 🇱🇺 LU 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - wwc503
+  - 🇱🇺 LU 01 - wwc503
 rules:
 - MATCH,PROXIES
