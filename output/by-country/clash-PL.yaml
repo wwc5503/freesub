@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - wwc503
   type: vless
-  server: 104.25.22.24
+  server: 104.17.247.68
   port: 443
   uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: khoda.ak-khoda.workers.dev
 - name: 🇵🇱 PL 02 - wwc503
   type: vless
-  server: 104.17.247.68
+  server: 104.25.146.77
   port: 443
   uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: khoda.ak-khoda.workers.dev
 - name: 🇵🇱 PL 03 - wwc503
   type: vless
-  server: 104.25.146.77
+  server: 104.25.22.24
   port: 443
   uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
@@ -46,13 +46,6 @@ proxies:
     path: /sync
     headers:
       Host: khoda.ak-khoda.workers.dev
-- name: 🇵🇱 PL 04 - wwc503
-  type: ss
-  server: 146.59.116.19
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,7 +54,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - wwc503
   - 🇵🇱 PL 02 - wwc503
   - 🇵🇱 PL 03 - wwc503
-  - 🇵🇱 PL 04 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,6 +62,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - wwc503
   - 🇵🇱 PL 02 - wwc503
   - 🇵🇱 PL 03 - wwc503
-  - 🇵🇱 PL 04 - wwc503
 rules:
 - MATCH,PROXIES

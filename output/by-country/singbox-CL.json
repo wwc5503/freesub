@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 CL 01 - wwc503"
+        "🇨🇱 CL 01 - wwc503",
+        "🇨🇱 CL 02 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 CL 01 - wwc503"
+        "🇨🇱 CL 01 - wwc503",
+        "🇨🇱 CL 02 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

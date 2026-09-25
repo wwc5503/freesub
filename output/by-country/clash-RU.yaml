@@ -5,27 +5,97 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wwc503
-  type: ss
-  server: 62.113.41.165
-  port: 888
-  cipher: chacha20-ietf-poly1305
-  password: hF-qqin2wYhP7zS47SyR0Q
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 172.64.154.8
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: fbsv6.guardora.pro
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 - wwc503
+  type: vless
+  server: 172.64.42.85
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 03 - wwc503
+  type: vless
+  server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - wwc503
+  type: vless
+  server: 188.114.97.6
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 05 - wwc503
+  type: vless
+  server: 185.148.104.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 06 - wwc503
+  type: vless
+  server: 104.21.70.21
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 07 - wwc503
+  type: vless
+  server: 162.159.24.131
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 08 - wwc503
   type: vless
   server: 46.8.200.91
   port: 443
@@ -39,6 +109,19 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 09 - wwc503
+  type: vless
+  server: 172.67.152.71
+  port: 8880
+  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lucky-cake-4f58.318-5ee.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +130,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 03 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 04 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 05 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 06 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 07 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 08 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 09 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +144,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 03 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 04 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 05 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 06 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 07 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 08 - wwc503
+  - 🇷🇺 俄罗斯 (Russia) 09 - wwc503
 rules:
 - MATCH,PROXIES
