@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - wwc503
   type: vless
-  server: 104.17.247.68
+  server: 104.25.22.24
   port: 443
   uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true
@@ -34,7 +34,7 @@ proxies:
       Host: khoda.ak-khoda.workers.dev
 - name: 🇵🇱 PL 03 - wwc503
   type: vless
-  server: 104.25.22.24
+  server: 104.17.247.68
   port: 443
   uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
   udp: true

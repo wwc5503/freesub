@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - wwc503
-  type: vless
-  server: 172.67.174.37
-  port: 8880
-  uuid: b2c879ed-08a2-4a79-9c57-37c7db614e96
+  type: ss
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: sweet-cake-1340.474-288.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
