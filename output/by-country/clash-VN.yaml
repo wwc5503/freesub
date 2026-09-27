@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇱 荷兰 (Netherlands) 01 (家宽) - wwc503
+- name: 🇻🇳 VN 01 - wwc503
   type: vless
-  server: 162.159.153.4
+  server: 160.187.1.101
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: c92e12ca-ea66-4785-8675-652b35134117
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: thus-k.netnode.cc.cd
   network: ws
   ws-opts:
-    path: /
+    path: /t.me/daily_free_vpn
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: thus-k.netnode.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - wwc503
+  - 🇻🇳 VN 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 (Netherlands) 01 (家宽) - wwc503
+  - 🇻🇳 VN 01 - wwc503
 rules:
 - MATCH,PROXIES
