@@ -4,31 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 VN 01 - wwc503
+- name: 🇧🇪 BE 01 - wwc503
   type: vless
-  server: 160.187.1.101
+  server: 34.79.178.1
   port: 443
-  uuid: c92e12ca-ea66-4785-8675-652b35134117
+  uuid: 51e493d4-b275-45e0-a714-e014f40b3c32
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: thus-k.netnode.cc.cd
-  network: ws
-  ws-opts:
-    path: /t.me/daily_free_vpn
-    headers:
-      Host: thus-k.netnode.cc.cd
+  reality-opts:
+    public-key: nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 VN 01 - wwc503
+  - 🇧🇪 BE 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 VN 01 - wwc503
+  - 🇧🇪 BE 01 - wwc503
 rules:
 - MATCH,PROXIES
