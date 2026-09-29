@@ -6,12 +6,16 @@ log-level: info
 proxies:
 - name: 🇲🇽 MX 01 - wwc503
   type: vless
-  server: 45.164.20.85
-  port: 10226
-  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
+  server: 34.51.29.171
+  port: 443
+  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
+  servername: www.cloudflare.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select

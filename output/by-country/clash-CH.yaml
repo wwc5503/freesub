@@ -19,20 +19,6 @@ proxies:
       Host: netlivpn2950.bbxff.workers.dev
 - name: 🇨🇭 CH 02 - wwc503
   type: vless
-  server: 104.18.28.234
-  port: 443
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
-- name: 🇨🇭 CH 03 - wwc503
-  type: vless
   server: 104.21.200.243
   port: 2053
   uuid: 7074b9d7-2183-8919-fc11-ca5e00000000
@@ -45,6 +31,20 @@ proxies:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
       Host: netlivpn2584.vjvdgbc.workers.dev
+- name: 🇨🇭 CH 03 - wwc503
+  type: vless
+  server: 104.18.28.234
+  port: 443
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

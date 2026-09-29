@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - wwc503
-  type: ss
-  server: 109.248.148.139
-  port: 11469
-  cipher: aes-128-gcm
-  password: ce45b16adec66e4a199d92b9689eae9f
+- name: 🇹🇷 土耳其 (Turkey) 01 - wwc503
+  type: vless
+  server: 178.83.46.216
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - wwc503
+  - 🇹🇷 土耳其 (Turkey) 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - wwc503
+  - 🇹🇷 土耳其 (Turkey) 01 - wwc503
 rules:
 - MATCH,PROXIES

@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - wwc503
+- name: 🇧🇷 BR 01 - wwc503
   type: vless
-  server: 34.79.178.1
+  server: 43.174.192.1
   port: 443
-  uuid: 51e493d4-b275-45e0-a714-e014f40b3c32
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - wwc503
+  - 🇧🇷 BR 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - wwc503
+  - 🇧🇷 BR 01 - wwc503
 rules:
 - MATCH,PROXIES
