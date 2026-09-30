@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇮🇱 IL 01 - wwc503
   type: ss
-  server: 45.158.199.33
+  server: 45.146.91.191
   port: 4
   cipher: chacha20-ietf-poly1305
   password: 9qGcNiZj4uCi7DGSjxlg5Q

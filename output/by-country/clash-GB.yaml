@@ -6,40 +6,33 @@ log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - wwc503
   type: ss
-  server: 129.151.93.216
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: OLSE823mI1o8K0A56QvU38ZcxIjpyhMayqkmo2vnDIs=
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 02 - wwc503
-  type: ss
-  server: 134.65.57.214
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: UNZ0W60AIJtxUPqtW9sZxhk3229fO2tam+efe3LvqZs=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 03 - wwc503
   type: vless
-  server: 46.250.240.80
+  server: 46.250.250.149
   port: 2053
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-  servername: www.cloudflare.com
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 04 - wwc503
+- name: 🇬🇧 英国 (United Kingdom) 03 - wwc503
   type: ss
-  server: 149.102.149.207
+  server: 149.102.132.184
   port: 80
   cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  password: g5h5jleTRSyO3Rk4
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - wwc503
+- name: 🇬🇧 英国 (United Kingdom) 04 - wwc503
   type: vless
-  server: 91.193.58.93
+  server: 91.193.58.195
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
@@ -51,28 +44,57 @@ proxies:
     path: /Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 06 - wwc503
-  type: ss
-  server: 129.151.77.138
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Aa5ruIBxlM7EdchzgDPJSS4Qs8sGtE2jaapL+288G34=
+- name: 🇬🇧 英国 (United Kingdom) 05 - wwc503
+  type: vless
+  server: 91.193.59.191
+  port: 2087
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vlso5.1d.mom
+  network: ws
+  ws-opts:
+    path: /socks5=888:888
+    headers:
+      Host: vlso5.1d.mom
+- name: 🇬🇧 英国 (United Kingdom) 06 - wwc503
+  type: vless
+  server: 91.193.58.117
+  port: 443
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jamph131-1228.pages.dev
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 07 - wwc503
   type: ss
-  server: 149.102.149.207
+  server: 149.102.132.184
   port: 443
   cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  password: g5h5jleTRSyO3Rk4
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 08 - wwc503
   type: ss
-  server: 129.151.64.23
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bgO5KO6o1ZQJ2Jm3nMXWkUplEqHxOjE5qHAgSYvDw4A=
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 09 - wwc503
+  type: vless
+  server: 146.19.130.192
+  port: 57890
+  uuid: 554152b4-7819-4e3b-9971-74d6fd8b3975
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 10 - wwc503
   type: vless
   server: 139.59.189.127
   port: 443
@@ -86,83 +108,55 @@ proxies:
     path: /
     headers:
       Host: shy-fog-af06.alvlirm333.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 10 - wwc503
-  type: vless
-  server: 46.250.240.80
-  port: 2053
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-  servername: www.cloudflare.com
-  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 11 - wwc503
-  type: vmess
-  server: 66.163.117.58
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.67.162.201
+  port: 2053
+  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: RESTlESs-MoON-dD68RidaM-tOo-In-MAmLEkat.hGtghFF67tdFHUt3.WORkerS.DEV
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: aksai.org
+      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 12 - wwc503
+  type: vless
+  server: 104.21.53.160
+  port: 443
+  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 13 - wwc503
   type: ss
-  server: 129.151.75.241
+  server: 129.151.88.107
   port: 61312
   cipher: 2022-blake3-chacha20-poly1305
-  password: FQrzr8AfOOU7hZ4+8Cr8iDUUzlHz0S6dvyS44jdUe1o=
+  password: 633s1MN0Qzgm7kHVMk2MQb9MiOTZ/lEXy31p7RY/LaQ=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 13 - wwc503
-  type: vless
-  server: 91.193.58.141
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 14 - wwc503
-  type: vless
-  server: 91.193.58.195
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 15 - wwc503
-  type: vless
-  server: 104.21.16.109
-  port: 443
-  uuid: cc08d2d0-8a7a-4469-81d2-c43704451271
+  type: ss
+  server: 51.77.225.200
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/6871nrbnl9WsdAiOUInt
-    headers:
-      Host: 9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 16 - wwc503
   type: vmess
   server: 57.129.132.223
@@ -180,14 +174,33 @@ proxies:
       Host: google.com
 - name: 🇬🇧 英国 (United Kingdom) 17 - wwc503
   type: ss
-  server: 143.110.161.156
-  port: 17000
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  server: 134.65.62.95
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +n/Yn6rWy+11rk4MxKsXdkGqV5y7bSFi1ktUN4jt11w=
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 18 - wwc503
   type: vless
-  server: 91.193.58.117
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 19 - wwc503
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - wwc503
+  type: vless
+  server: 91.193.58.141
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
@@ -199,69 +212,13 @@ proxies:
     path: /Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 19 - wwc503
-  type: ss
-  server: 134.65.63.84
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: lzhjI3jtrWa2fM7GAWa3TNPZievCEkTqTlOzW+A0Ct8=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 20 - wwc503
-  type: vless
-  server: 91.193.59.191
-  port: 2087
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlso5.1d.mom
-  network: ws
-  ws-opts:
-    path: /socks5=888:888
-    headers:
-      Host: vlso5.1d.mom
 - name: 🇬🇧 英国 (United Kingdom) 21 - wwc503
-  type: vless
-  server: 46.250.250.149
-  port: 2053
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 22 - wwc503
   type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 23 - wwc503
-  type: ss
-  server: 134.65.57.26
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Sm4F5fX+ZJpWpkXMNbw0yYrWolYIiwknVYDwx8eus78=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 24 - wwc503
-  type: vmess
-  server: 186.190.211.67
+  server: 141.98.101.181
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -288,9 +245,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 19 - wwc503
   - 🇬🇧 英国 (United Kingdom) 20 - wwc503
   - 🇬🇧 英国 (United Kingdom) 21 - wwc503
-  - 🇬🇧 英国 (United Kingdom) 22 - wwc503
-  - 🇬🇧 英国 (United Kingdom) 23 - wwc503
-  - 🇬🇧 英国 (United Kingdom) 24 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -317,8 +271,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 19 - wwc503
   - 🇬🇧 英国 (United Kingdom) 20 - wwc503
   - 🇬🇧 英国 (United Kingdom) 21 - wwc503
-  - 🇬🇧 英国 (United Kingdom) 22 - wwc503
-  - 🇬🇧 英国 (United Kingdom) 23 - wwc503
-  - 🇬🇧 英国 (United Kingdom) 24 - wwc503
 rules:
 - MATCH,PROXIES
