@@ -13,32 +13,18 @@ proxies:
   udp: true
 - name: 🇦🇹 AT 02 - wwc503
   type: vless
-  server: 132.243.203.214
+  server: 173.242.63.235
   port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shephe.dpdns.org
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /fp=chrome
     headers:
-      Host: shephe.dpdns.org
-- name: 🇦🇹 AT 03 - wwc503
-  type: vless
-  server: 132.243.203.214
-  port: 8443
-  uuid: 9e3132b8-b595-444a-833a-2de44789f9d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shephe.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shephe.dpdns.org
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 AT 01 - wwc503
   - 🇦🇹 AT 02 - wwc503
-  - 🇦🇹 AT 03 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 AT 01 - wwc503
   - 🇦🇹 AT 02 - wwc503
-  - 🇦🇹 AT 03 - wwc503
 rules:
 - MATCH,PROXIES
