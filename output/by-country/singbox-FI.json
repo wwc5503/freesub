@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - wwc503",
-        "🇮🇪 IE 02 - wwc503"
+        "🇫🇮 FI 01 - wwc503",
+        "🇫🇮 FI 02 - wwc503",
+        "🇫🇮 FI 03 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - wwc503",
-        "🇮🇪 IE 02 - wwc503"
+        "🇫🇮 FI 01 - wwc503",
+        "🇫🇮 FI 02 - wwc503",
+        "🇫🇮 FI 03 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

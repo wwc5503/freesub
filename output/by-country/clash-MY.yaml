@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - wwc503
   type: vless
-  server: platform102.golnamakcert.top
+  server: platform109.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -14,9 +14,9 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform102
+    path: /platform109
     headers:
-      Host: platform102.halalkhor.info
+      Host: platform109.halalkhor.info
 - name: 🇲🇾 MY 02 - wwc503
   type: vless
   server: platform101.golnamakcert.top
@@ -32,7 +32,7 @@ proxies:
       Host: platform101.halalkhor.info
 - name: 🇲🇾 MY 03 - wwc503
   type: vless
-  server: platform117.golnamakcert.top
+  server: platform113.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -40,23 +40,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform117
+    path: /platform113
     headers:
-      Host: platform117.halalkhor.info
+      Host: platform113.halalkhor.info
 - name: 🇲🇾 MY 04 - wwc503
-  type: vless
-  server: platform107.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-- name: 🇲🇾 MY 05 - wwc503
   type: vless
   server: platform118.golnamakcert.top
   port: 80
@@ -69,7 +56,7 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 06 - wwc503
+- name: 🇲🇾 MY 05 - wwc503
   type: vless
   server: platform106.golnamakcert.top
   port: 80
@@ -82,9 +69,9 @@ proxies:
     path: /platform106
     headers:
       Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 07 - wwc503
+- name: 🇲🇾 MY 06 - wwc503
   type: vless
-  server: platform103.golnamakcert.top
+  server: platform102.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -92,9 +79,22 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform102
     headers:
-      Host: platform103.halalkhor.info
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 07 - wwc503
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
 - name: 🇲🇾 MY 08 - wwc503
   type: vless
   server: platform115.golnamakcert.top
@@ -110,21 +110,7 @@ proxies:
       Host: platform115.halalkhor.info
 - name: 🇲🇾 MY 09 - wwc503
   type: vless
-  server: 156.224.76.205
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vp10.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 🇲🇾 MY 10 - wwc503
-  type: vless
-  server: platform109.golnamakcert.top
+  server: platform103.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -132,9 +118,29 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform103
     headers:
-      Host: platform109.halalkhor.info
+      Host: platform103.halalkhor.info
+- name: 🇲🇾 MY 10 - wwc503
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+- name: 🇲🇾 MY 11 - wwc503
+  type: ss
+  server: 130.94.69.15
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -150,6 +156,7 @@ proxy-groups:
   - 🇲🇾 MY 08 - wwc503
   - 🇲🇾 MY 09 - wwc503
   - 🇲🇾 MY 10 - wwc503
+  - 🇲🇾 MY 11 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -165,5 +172,6 @@ proxy-groups:
   - 🇲🇾 MY 08 - wwc503
   - 🇲🇾 MY 09 - wwc503
   - 🇲🇾 MY 10 - wwc503
+  - 🇲🇾 MY 11 - wwc503
 rules:
 - MATCH,PROXIES
