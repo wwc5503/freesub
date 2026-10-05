@@ -6,58 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇱 CL 01 - wwc503
   type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇨🇱 CL 02 - wwc503
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇨🇱 CL 03 - wwc503
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
-- name: 🇨🇱 CL 04 - wwc503
-  type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇨🇱 CL 05 - wwc503
-  type: vless
   server: platform101.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
@@ -69,9 +17,9 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
-- name: 🇨🇱 CL 06 - wwc503
+- name: 🇨🇱 CL 02 - wwc503
   type: vless
-  server: platform103.golnamakcert.top
+  server: 64.176.19.77
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -79,12 +27,12 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform118
     headers:
-      Host: platform103.halalkhor.info
-- name: 🇨🇱 CL 07 - wwc503
+      Host: platform118.halalkhor.info
+- name: 🇨🇱 CL 03 - wwc503
   type: vless
-  server: platform109.golnamakcert.top
+  server: platform115.golnamakcert.top
   port: 80
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   udp: true
@@ -92,23 +40,10 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform115
     headers:
-      Host: platform109.halalkhor.info
-- name: 🇨🇱 CL 08 - wwc503
-  type: vless
-  server: platform107.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.golnamakcert.top
-- name: 🇨🇱 CL 09 - wwc503
+      Host: platform115.halalkhor.info
+- name: 🇨🇱 CL 04 - wwc503
   type: vless
   server: platform118.golnamakcert.top
   port: 80
@@ -121,7 +56,33 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
-- name: 🇨🇱 CL 10 - wwc503
+- name: 🇨🇱 CL 05 - wwc503
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇨🇱 CL 06 - wwc503
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇨🇱 CL 07 - wwc503
   type: vless
   server: platform107.golnamakcert.top
   port: 80
@@ -134,6 +95,110 @@ proxies:
     path: /platform107
     headers:
       Host: platform107.halalkhor.info
+- name: 🇨🇱 CL 08 - wwc503
+  type: vless
+  server: platform113.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: platform113.halalkhor.info
+- name: 🇨🇱 CL 09 - wwc503
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇨🇱 CL 10 - wwc503
+  type: vless
+  server: 64.176.15.134
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇨🇱 CL 11 - wwc503
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.golnamakcert.top
+- name: 🇨🇱 CL 12 - wwc503
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇨🇱 CL 13 - wwc503
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇨🇱 CL 14 - wwc503
+  type: vless
+  server: 64.176.10.89
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇨🇱 CL 15 - wwc503
+  type: vless
+  server: 64.176.16.32
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: 64.176.16.32
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,6 +214,11 @@ proxy-groups:
   - 🇨🇱 CL 08 - wwc503
   - 🇨🇱 CL 09 - wwc503
   - 🇨🇱 CL 10 - wwc503
+  - 🇨🇱 CL 11 - wwc503
+  - 🇨🇱 CL 12 - wwc503
+  - 🇨🇱 CL 13 - wwc503
+  - 🇨🇱 CL 14 - wwc503
+  - 🇨🇱 CL 15 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,5 +234,10 @@ proxy-groups:
   - 🇨🇱 CL 08 - wwc503
   - 🇨🇱 CL 09 - wwc503
   - 🇨🇱 CL 10 - wwc503
+  - 🇨🇱 CL 11 - wwc503
+  - 🇨🇱 CL 12 - wwc503
+  - 🇨🇱 CL 13 - wwc503
+  - 🇨🇱 CL 14 - wwc503
+  - 🇨🇱 CL 15 - wwc503
 rules:
 - MATCH,PROXIES
