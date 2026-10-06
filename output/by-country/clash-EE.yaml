@@ -24,6 +24,19 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 03 - wwc503
   type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
+- name: 🇪🇪 EE 04 - wwc503
+  type: vless
   server: 77.72.85.247
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
@@ -36,20 +49,25 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 04 - wwc503
+- name: 🇪🇪 EE 05 - wwc503
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 05 - wwc503
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 06 - wwc503
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 07 - wwc503
   type: vless
   server: 141.0.187.16
   port: 2083
@@ -63,7 +81,7 @@ proxies:
     path: /vless-ws
     headers:
       Host: 141.0.187.16
-- name: 🇪🇪 EE 06 - wwc503
+- name: 🇪🇪 EE 08 - wwc503
   type: vless
   server: 94.183.170.135
   port: 443
@@ -75,30 +93,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 07 - wwc503
-  type: vless
-  server: 77.72.85.246
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 08 - wwc503
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 09 - wwc503
   type: vless
   server: 77.72.85.246
@@ -113,6 +108,56 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 EE 10 - wwc503
+  type: vless
+  server: 77.72.85.246
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 11 - wwc503
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 12 - wwc503
+  type: vless
+  server: 77.72.85.247
+  port: 8443
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
+- name: 🇪🇪 EE 13 - wwc503
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -127,6 +172,10 @@ proxy-groups:
   - 🇪🇪 EE 07 - wwc503
   - 🇪🇪 EE 08 - wwc503
   - 🇪🇪 EE 09 - wwc503
+  - 🇪🇪 EE 10 - wwc503
+  - 🇪🇪 EE 11 - wwc503
+  - 🇪🇪 EE 12 - wwc503
+  - 🇪🇪 EE 13 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -141,5 +190,9 @@ proxy-groups:
   - 🇪🇪 EE 07 - wwc503
   - 🇪🇪 EE 08 - wwc503
   - 🇪🇪 EE 09 - wwc503
+  - 🇪🇪 EE 10 - wwc503
+  - 🇪🇪 EE 11 - wwc503
+  - 🇪🇪 EE 12 - wwc503
+  - 🇪🇪 EE 13 - wwc503
 rules:
 - MATCH,PROXIES
