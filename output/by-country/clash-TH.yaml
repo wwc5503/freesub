@@ -34,6 +34,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇹🇭 TH 04 - wwc503
+  type: vmess
+  server: 119.46.51.45
+  port: 37515
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +52,7 @@ proxy-groups:
   - 🇹🇭 TH 01 - wwc503
   - 🇹🇭 TH 02 - wwc503
   - 🇹🇭 TH 03 - wwc503
+  - 🇹🇭 TH 04 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +61,6 @@ proxy-groups:
   - 🇹🇭 TH 01 - wwc503
   - 🇹🇭 TH 02 - wwc503
   - 🇹🇭 TH 03 - wwc503
+  - 🇹🇭 TH 04 - wwc503
 rules:
 - MATCH,PROXIES

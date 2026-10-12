@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - wwc503
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 02 - wwc503
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -25,6 +18,29 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇮🇪 IE 02 - wwc503
+  type: vless
+  server: 104.21.48.1
+  port: 443
+  uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cho.chonon.sbs
+- name: 🇮🇪 IE 03 - wwc503
+  type: ss
+  server: 20.234.97.18
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: GayYa2V7pUbJBfKu
+  udp: true
+- name: 🇮🇪 IE 04 - wwc503
+  type: ss
+  server: 20.234.97.18
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: GayYa2V7pUbJBfKu
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +48,8 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - wwc503
   - 🇮🇪 IE 02 - wwc503
+  - 🇮🇪 IE 03 - wwc503
+  - 🇮🇪 IE 04 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +57,7 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - wwc503
   - 🇮🇪 IE 02 - wwc503
+  - 🇮🇪 IE 03 - wwc503
+  - 🇮🇪 IE 04 - wwc503
 rules:
 - MATCH,PROXIES

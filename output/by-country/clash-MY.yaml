@@ -29,9 +29,35 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇲🇾 MY 03 - wwc503
+  type: vless
+  server: platform102.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇲🇾 MY 04 - wwc503
+  type: vless
+  server: platform101.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +65,8 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - wwc503
   - 🇲🇾 MY 02 - wwc503
+  - 🇲🇾 MY 03 - wwc503
+  - 🇲🇾 MY 04 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +74,7 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - wwc503
   - 🇲🇾 MY 02 - wwc503
+  - 🇲🇾 MY 03 - wwc503
+  - 🇲🇾 MY 04 - wwc503
 rules:
 - MATCH,PROXIES
