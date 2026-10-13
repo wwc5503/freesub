@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇺🇦 UA 01 - wwc503
   type: vless
-  server: z5n1.vpnpolar.online
-  port: 443
-  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z5n1.vpnpolar.online
-  network: ws
-  ws-opts:
-    path: /beeline
-    headers:
-      Host: z5n1.vpnpolar.online
-- name: 🇺🇦 UA 02 - wwc503
-  type: vless
   server: 213.111.148.137
   port: 443
   uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇦 UA 01 - wwc503
-  - 🇺🇦 UA 02 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 UA 01 - wwc503
-  - 🇺🇦 UA 02 - wwc503
 rules:
 - MATCH,PROXIES
