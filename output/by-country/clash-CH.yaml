@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - wwc503
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  server: 188.34.142.174
+  port: 444
+  uuid: da46ec1f-84ad-4470-866f-010b58357b19
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
 - name: 🇨🇭 CH 02 - wwc503
   type: vless
   server: 208.69.78.217
@@ -25,13 +32,80 @@ proxies:
   client-fingerprint: chrome
 - name: 🇨🇭 CH 03 - wwc503
   type: vless
-  server: 138.124.96.88
-  port: 41826
-  uuid: 2eb3f6a0-df6e-49b6-994c-177acdd50a97
+  server: 87.228.92.113
+  port: 25576
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: sweden.homyak.app
+  reality-opts:
+    public-key: ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 04 - wwc503
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 05 - wwc503
+  type: vless
+  server: 45.133.151.186
+  port: 25393
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 06 - wwc503
+  type: vless
+  server: 177.3.208.65
+  port: 443
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tgmansion.site
+  network: ws
+  ws-opts:
+    path: /vless-il
+    headers:
+      Host: tgmansion.site
+- name: 🇨🇭 CH 07 - wwc503
+  type: vless
+  server: 87.228.92.113
+  port: 25576
+  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇭 CH 08 - wwc503
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 09 - wwc503
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +114,12 @@ proxy-groups:
   - 🇨🇭 CH 01 - wwc503
   - 🇨🇭 CH 02 - wwc503
   - 🇨🇭 CH 03 - wwc503
+  - 🇨🇭 CH 04 - wwc503
+  - 🇨🇭 CH 05 - wwc503
+  - 🇨🇭 CH 06 - wwc503
+  - 🇨🇭 CH 07 - wwc503
+  - 🇨🇭 CH 08 - wwc503
+  - 🇨🇭 CH 09 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +128,11 @@ proxy-groups:
   - 🇨🇭 CH 01 - wwc503
   - 🇨🇭 CH 02 - wwc503
   - 🇨🇭 CH 03 - wwc503
+  - 🇨🇭 CH 04 - wwc503
+  - 🇨🇭 CH 05 - wwc503
+  - 🇨🇭 CH 06 - wwc503
+  - 🇨🇭 CH 07 - wwc503
+  - 🇨🇭 CH 08 - wwc503
+  - 🇨🇭 CH 09 - wwc503
 rules:
 - MATCH,PROXIES
