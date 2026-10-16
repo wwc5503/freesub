@@ -5,22 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wwc503
-  type: vmess
-  server: fujrdt.d6f54hd1j.cc
-  port: 443
-  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: hinet1.2yly.com
+  port: 24215
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fujrdt.d6f54hd1j.cc
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 02 (家宽) - wwc503
+  type: vless
+  server: 209.38.238.229
+  port: 20202
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wzs.echo.net.eu.org
   network: ws
   ws-opts:
-    path: /
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
     headers:
-      Host: fujrdt.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wwc503
+      Host: wzs.echo.net.eu.org
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wwc503
   type: vless
   server: 60.248.219.78
   port: 443
@@ -40,13 +50,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wwc503
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wwc503
+  - 🇩🇪 德国 (Germany) 02 (家宽) - wwc503
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wwc503
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wwc503
+  - 🇩🇪 德国 (Germany) 02 (家宽) - wwc503
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wwc503
 rules:
 - MATCH,PROXIES

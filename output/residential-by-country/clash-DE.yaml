@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇪 PE 01 - wwc503
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - wwc503
   type: vless
-  server: 172.65.90.41
-  port: 2053
+  server: 209.38.238.229
+  port: 20202
   uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   udp: true
   tls: true
@@ -15,7 +15,7 @@ proxies:
   servername: wzs.echo.net.eu.org
   network: ws
   ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlNSSwUEURwBVwcWUQYJGxsPQldGTQ8OBgJWFUU=
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
     headers:
       Host: wzs.echo.net.eu.org
 proxy-groups:
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇵🇪 PE 01 - wwc503
+  - 🇩🇪 德国 (Germany) 01 (家宽) - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇪 PE 01 - wwc503
+  - 🇩🇪 德国 (Germany) 01 (家宽) - wwc503
 rules:
 - MATCH,PROXIES
