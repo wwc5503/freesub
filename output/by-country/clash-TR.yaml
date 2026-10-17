@@ -15,18 +15,10 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chromefp=chrome
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - wwc503
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - wwc503
   type: vless
   server: 155.103.71.142
   port: 443
@@ -37,9 +29,17 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /fp=chromefp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 03 - wwc503
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 04 - wwc503
   type: vless
   server: 151.241.226.201
@@ -51,8 +51,16 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 05 - wwc503
+  type: vless
+  server: test.keoplentuio.xyz
+  port: 2053
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 - wwc503
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -64,14 +72,6 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 06 - wwc503
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 07 - wwc503
   type: vless
   server: 151.241.226.201
@@ -83,7 +83,21 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 08 - wwc503
+  type: ss
+  server: 206.1.99.116
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 09 - wwc503
+  type: ss
+  server: api.apira98.org
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,6 +110,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - wwc503
   - 🇹🇷 土耳其 (Turkey) 06 - wwc503
   - 🇹🇷 土耳其 (Turkey) 07 - wwc503
+  - 🇹🇷 土耳其 (Turkey) 08 - wwc503
+  - 🇹🇷 土耳其 (Turkey) 09 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -108,5 +124,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - wwc503
   - 🇹🇷 土耳其 (Turkey) 06 - wwc503
   - 🇹🇷 土耳其 (Turkey) 07 - wwc503
+  - 🇹🇷 土耳其 (Turkey) 08 - wwc503
+  - 🇹🇷 土耳其 (Turkey) 09 - wwc503
 rules:
 - MATCH,PROXIES

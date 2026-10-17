@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - wwc503
-  type: vless
-  server: 5.189.254.168
-  port: 2053
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf3.schzyc.cc.cd
-  network: ws
-  ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
-    headers:
-      Host: cf3.schzyc.cc.cd
-- name: 🇪🇪 EE 02 - wwc503
   type: vmess
   server: eu3.998998.best
   port: 443
@@ -34,6 +20,20 @@ proxies:
     path: /aiaiai
     headers:
       Host: server40.9966338.xyz
+- name: 🇪🇪 EE 02 - wwc503
+  type: vless
+  server: 5.189.254.168
+  port: 2053
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cf3.schzyc.cc.cd
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
+    headers:
+      Host: cf3.schzyc.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select

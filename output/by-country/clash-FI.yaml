@@ -5,24 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - wwc503
-  type: vmess
-  server: fin-2.povrak.ir
-  port: 56268
-  uuid: 9a53a545-53e3-4fce-a0ba-5cfc3c4e5a74
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 02 - wwc503
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: mci.amir12.ir
+  port: 2112
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇫🇮 FI 03 - wwc503
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 02 - wwc503
   type: vless
   server: 95.216.27.15
   port: 2053
@@ -33,8 +27,8 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 FI 04 - wwc503
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - wwc503
   type: vless
   server: 45.144.234.157
   port: 14430
@@ -47,6 +41,18 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 04 - wwc503
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
 - name: 🇫🇮 FI 05 - wwc503
   type: vless
   server: 95.216.27.15
@@ -70,39 +76,19 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 07 - wwc503
   type: vless
-  server: 3f8efdt.fi1.h1clayd.click
-  port: 443
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  server: mci1.amir12.ir
+  port: 1222
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 1D_o1pqfVoReg9zLPKNy1wCL7aGWytbmbYPbbJGaozY
-  servername: 3f8efdt.fi1.h1clayd.click
-  client-fingerprint: edge
-- name: 🇫🇮 FI 08 - wwc503
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+  servername: play.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 09 - wwc503
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,8 +101,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - wwc503
   - 🇫🇮 FI 06 - wwc503
   - 🇫🇮 FI 07 - wwc503
-  - 🇫🇮 FI 08 - wwc503
-  - 🇫🇮 FI 09 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,7 +113,5 @@ proxy-groups:
   - 🇫🇮 FI 05 - wwc503
   - 🇫🇮 FI 06 - wwc503
   - 🇫🇮 FI 07 - wwc503
-  - 🇫🇮 FI 08 - wwc503
-  - 🇫🇮 FI 09 - wwc503
 rules:
 - MATCH,PROXIES

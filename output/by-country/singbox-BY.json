@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 BY 01 - wwc503"
+        "🇧🇾 BY 01 - wwc503",
+        "🇧🇾 BY 02 - wwc503",
+        "🇧🇾 BY 03 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 BY 01 - wwc503"
+        "🇧🇾 BY 01 - wwc503",
+        "🇧🇾 BY 02 - wwc503",
+        "🇧🇾 BY 03 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

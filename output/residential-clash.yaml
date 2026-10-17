@@ -4,7 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wwc503
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - wwc503
+  type: ss
+  server: ce1fc2d8.krkt.hkssip.com
+  port: 49642
+  cipher: aes-256-gcm
+  password: ac9c0a7b
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wwc503
   type: vless
   server: hinet1.2yly.com
   port: 24215
@@ -16,21 +23,36 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 02 (家宽) - wwc503
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - wwc503
+  type: vmess
+  server: 183.109.131.75
+  port: 20086
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - wwc503
   type: vless
-  server: 209.38.238.229
-  port: 20202
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  server: 131.186.24.124
+  port: 587
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wzs.echo.net.eu.org
+  servername: cf3.schzyc.cc.cd
   network: ws
   ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    path: /proxyip=ProxyIP.CMLiussss.net
     headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wwc503
+      Host: cf3.schzyc.cc.cd
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - wwc503
   type: vless
   server: 60.248.219.78
   port: 443
@@ -49,16 +71,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wwc503
-  - 🇩🇪 德国 (Germany) 02 (家宽) - wwc503
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wwc503
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - wwc503
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wwc503
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - wwc503
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - wwc503
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - wwc503
-  - 🇩🇪 德国 (Germany) 02 (家宽) - wwc503
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - wwc503
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - wwc503
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - wwc503
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - wwc503
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - wwc503
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - wwc503
 rules:
 - MATCH,PROXIES
