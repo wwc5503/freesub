@@ -6,18 +6,16 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - wwc503
   type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  server: 151.241.226.201
+  port: 2053
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - wwc503
   type: vless
   server: 155.103.71.142
@@ -34,24 +32,21 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - wwc503
   type: vless
+  server: 206.1.100.148
+  port: 8443
+  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: game.jafarghasemivip.ir
+- name: 🇹🇷 土耳其 (Turkey) 04 - wwc503
+  type: vless
   server: test.keoplentuio.xyz
   port: 2053
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 04 - wwc503
-  type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 05 - wwc503
   type: vless
   server: test.keoplentuio.xyz
@@ -61,6 +56,29 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 06 - wwc503
+  type: vless
+  server: 155.103.71.142
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇹🇷 土耳其 (Turkey) 07 - wwc503
+  type: vless
+  server: 206.1.100.148
+  port: 8443
+  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: game.jafarghasemivip.ir
+- name: 🇹🇷 土耳其 (Turkey) 08 - wwc503
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -72,32 +90,20 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 07 - wwc503
+- name: 🇹🇷 土耳其 (Turkey) 09 - wwc503
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  server: 203.202.232.211
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 08 - wwc503
-  type: ss
-  server: 206.1.99.116
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE
-  udp: true
-- name: 🇹🇷 土耳其 (Turkey) 09 - wwc503
-  type: ss
-  server: api.apira98.org
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: CM-_ISRcHPz4cetu7grgSEv0VpT5MTRE
-  udp: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select

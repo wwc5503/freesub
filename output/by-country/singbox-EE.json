@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - wwc503",
-        "🇪🇪 EE 02 - wwc503"
+        "🇪🇪 EE 01 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - wwc503",
-        "🇪🇪 EE 02 - wwc503"
+        "🇪🇪 EE 01 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },
