@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - wwc503
   type: vless
   server: 155.103.71.142
@@ -32,31 +32,6 @@ proxies:
       Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - wwc503
   type: vless
-  server: 206.1.100.148
-  port: 8443
-  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: game.jafarghasemivip.ir
-- name: 🇹🇷 土耳其 (Turkey) 04 - wwc503
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 05 - wwc503
-  type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 06 - wwc503
-  type: vless
   server: 155.103.71.142
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -69,16 +44,7 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 07 - wwc503
-  type: vless
-  server: 206.1.100.148
-  port: 8443
-  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: game.jafarghasemivip.ir
-- name: 🇹🇷 土耳其 (Turkey) 08 - wwc503
+- name: 🇹🇷 土耳其 (Turkey) 04 - wwc503
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -89,21 +55,7 @@ proxies:
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 09 - wwc503
-  type: vless
-  server: 203.202.232.211
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,11 +65,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - wwc503
   - 🇹🇷 土耳其 (Turkey) 03 - wwc503
   - 🇹🇷 土耳其 (Turkey) 04 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 05 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 06 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 07 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 08 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 09 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -127,10 +74,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - wwc503
   - 🇹🇷 土耳其 (Turkey) 03 - wwc503
   - 🇹🇷 土耳其 (Turkey) 04 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 05 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 06 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 07 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 08 - wwc503
-  - 🇹🇷 土耳其 (Turkey) 09 - wwc503
 rules:
 - MATCH,PROXIES

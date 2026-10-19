@@ -5,26 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wwc503
-  type: ss
-  server: 194.87.196.107
-  port: 18443
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   type: vless
-  server: 81.90.31.111
-  port: 443
-  uuid: d78d6815-5f00-4fe3-8aae-3344aeb7783f
+  server: 172.66.44.211
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 1f0c1c7297521d51.wgse.info
+  servername: wk1.f1w.de5.net
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: 1f0c1c7297521d51.wgse.info
+      Host: wk1.f1w.de5.net
+- name: 🇷🇺 俄罗斯 (Russia) 02 - wwc503
+  type: vless
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
 proxy-groups:
 - name: PROXIES
   type: select

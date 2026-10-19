@@ -6,13 +6,12 @@ log-level: info
 proxies:
 - name: 🇱🇰 LK 01 - wwc503
   type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  server: support.zoom.us
+  port: 80
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -20,7 +19,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 02 - wwc503
   type: vless
-  server: support.zoom.us
+  server: free.sahanwickramasinghe.me
   port: 80
   uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   udp: true
@@ -33,7 +32,7 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 03 - wwc503
   type: vless
-  server: 104.17.74.206
+  server: 104.17.72.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -47,12 +46,13 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 04 - wwc503
   type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  server: 51.75.67.209
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -101,12 +101,13 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 08 - wwc503
   type: vless
-  server: free.sahanwickramasinghe.me
-  port: 80
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  server: 104.17.74.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
   network: ws
   ws-opts:
     path: /
@@ -114,7 +115,77 @@ proxies:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 LK 09 - wwc503
   type: vless
-  server: 104.17.72.206
+  server: 51.75.67.209
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 10 - wwc503
+  type: vless
+  server: free.sahanwickramasinghe.me
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 11 - wwc503
+  type: vless
+  server: 104.17.71.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 12 - wwc503
+  type: vless
+  server: 104.17.70.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 13 - wwc503
+  type: vless
+  server: 104.17.70.206
+  port: 8443
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.sahanwickramasinghe.me
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 LK 14 - wwc503
+  type: vless
+  server: 104.17.74.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   udp: true
@@ -140,6 +211,11 @@ proxy-groups:
   - 🇱🇰 LK 07 - wwc503
   - 🇱🇰 LK 08 - wwc503
   - 🇱🇰 LK 09 - wwc503
+  - 🇱🇰 LK 10 - wwc503
+  - 🇱🇰 LK 11 - wwc503
+  - 🇱🇰 LK 12 - wwc503
+  - 🇱🇰 LK 13 - wwc503
+  - 🇱🇰 LK 14 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -154,5 +230,10 @@ proxy-groups:
   - 🇱🇰 LK 07 - wwc503
   - 🇱🇰 LK 08 - wwc503
   - 🇱🇰 LK 09 - wwc503
+  - 🇱🇰 LK 10 - wwc503
+  - 🇱🇰 LK 11 - wwc503
+  - 🇱🇰 LK 12 - wwc503
+  - 🇱🇰 LK 13 - wwc503
+  - 🇱🇰 LK 14 - wwc503
 rules:
 - MATCH,PROXIES
