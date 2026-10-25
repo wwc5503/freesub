@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - wwc503
-  type: vless
-  server: 217.19.122.156
-  port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /useraction/events/b892639b7195/
-    headers:
-      Host: z1q3pv4g78.rucdncomp.pro
-- name: 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   type: vmess
   server: 158.160.180.165
   port: 24212
@@ -29,33 +15,27 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 158.160.180.165
-- name: 🇷🇺 俄罗斯 (Russia) 03 - wwc503
-  type: vless
-  server: 45.142.120.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 04 - wwc503
+- name: 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   type: ss
-  server: 195.133.5.194
+  server: 46.17.43.227
   port: 18443
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - wwc503
-  type: ss
-  server: 176.32.33.153
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 03 - wwc503
+  type: vless
+  server: 46.243.142.104
+  port: 443
+  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: santehdv.site
+  network: ws
+  ws-opts:
+    path: /media/stream/qUWu2oaFgxAw
+    headers:
+      Host: santehdv.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,8 +44,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 03 - wwc503
-  - 🇷🇺 俄罗斯 (Russia) 04 - wwc503
-  - 🇷🇺 俄罗斯 (Russia) 05 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,7 +52,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   - 🇷🇺 俄罗斯 (Russia) 03 - wwc503
-  - 🇷🇺 俄罗斯 (Russia) 04 - wwc503
-  - 🇷🇺 俄罗斯 (Russia) 05 - wwc503
 rules:
 - MATCH,PROXIES
