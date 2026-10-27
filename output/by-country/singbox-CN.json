@@ -7,7 +7,11 @@
       "outbounds": [
         "auto",
         "🇨🇳 CN 01 - wwc503",
-        "🇨🇳 CN 02 - wwc503"
+        "🇨🇳 CN 02 - wwc503",
+        "🇨🇳 CN 03 - wwc503",
+        "🇨🇳 CN 04 - wwc503",
+        "🇨🇳 CN 05 - wwc503",
+        "🇨🇳 CN 06 - wwc503"
       ]
     },
     {
@@ -15,7 +19,11 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇳 CN 01 - wwc503",
-        "🇨🇳 CN 02 - wwc503"
+        "🇨🇳 CN 02 - wwc503",
+        "🇨🇳 CN 03 - wwc503",
+        "🇨🇳 CN 04 - wwc503",
+        "🇨🇳 CN 05 - wwc503",
+        "🇨🇳 CN 06 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },
