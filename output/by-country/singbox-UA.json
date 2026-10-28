@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 UA 01 - wwc503"
+        "🇺🇦 UA 01 - wwc503",
+        "🇺🇦 UA 02 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 UA 01 - wwc503"
+        "🇺🇦 UA 01 - wwc503",
+        "🇺🇦 UA 02 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },

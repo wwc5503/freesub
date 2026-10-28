@@ -32,21 +32,6 @@ proxies:
     path: /
     headers:
       Host: proxy-1cu.pages.dev
-- name: 🇸🇨 SC 03 - wwc503
-  type: vmess
-  server: 156.239.224.107
-  port: 57278
-  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - wwc503
   - 🇸🇨 SC 02 - wwc503
-  - 🇸🇨 SC 03 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - wwc503
   - 🇸🇨 SC 02 - wwc503
-  - 🇸🇨 SC 03 - wwc503
 rules:
 - MATCH,PROXIES
