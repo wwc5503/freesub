@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - wwc503
-  type: vless
-  server: 129.153.71.28
-  port: 28863
-  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
 - name: 🇨🇭 CH 02 - wwc503
   type: vless
   server: 208.69.78.217
@@ -29,26 +22,23 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 03 - wwc503
+  type: vless
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
+- name: 🇨🇭 CH 04 - wwc503
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 04 - wwc503
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇨🇭 CH 05 - wwc503
   type: vless
   server: 208.69.78.217
@@ -63,18 +53,16 @@ proxies:
   client-fingerprint: random
 - name: 🇨🇭 CH 06 - wwc503
   type: vless
-  server: 147.45.42.73
-  port: 20443
-  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 07 - wwc503
   type: vless
   server: 208.69.78.217
@@ -86,7 +74,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇭 CH 08 - wwc503
   type: vless
   server: 208.69.78.217
@@ -99,25 +87,6 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇨🇭 CH 09 - wwc503
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 10 - wwc503
-  type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,8 +100,6 @@ proxy-groups:
   - 🇨🇭 CH 06 - wwc503
   - 🇨🇭 CH 07 - wwc503
   - 🇨🇭 CH 08 - wwc503
-  - 🇨🇭 CH 09 - wwc503
-  - 🇨🇭 CH 10 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -146,7 +113,5 @@ proxy-groups:
   - 🇨🇭 CH 06 - wwc503
   - 🇨🇭 CH 07 - wwc503
   - 🇨🇭 CH 08 - wwc503
-  - 🇨🇭 CH 09 - wwc503
-  - 🇨🇭 CH 10 - wwc503
 rules:
 - MATCH,PROXIES

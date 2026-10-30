@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 PH 01 - wwc503"
+        "🇮🇲 IM 01 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 PH 01 - wwc503"
+        "🇮🇲 IM 01 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },
