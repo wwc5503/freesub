@@ -6,13 +6,12 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - wwc503
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - wwc503
   type: vless
   server: site.teslamotor.site
@@ -22,14 +21,21 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 03 - wwc503
+  type: ss
+  server: pol.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 8z2OB_gvFvpKgjFi8s9Cvw
+  udp: true
+- name: 🇵🇱 PL 04 - wwc503
   type: vless
-  server: 155.117.5.208
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 168.222.43.53
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 04 - wwc503
+- name: 🇵🇱 PL 05 - wwc503
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -38,30 +44,27 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 05 - wwc503
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇵🇱 PL 06 - wwc503
   type: vless
-  server: 168.222.43.53
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 07 - wwc503
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: 188.225.83.133
+  port: 443
+  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
+  servername: xnodtwx.artemida.live
+  client-fingerprint: firefox
 - name: 🇵🇱 PL 08 - wwc503
   type: vless
   server: 2.26.6.1
@@ -87,6 +90,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇵🇱 PL 11 - wwc503
+  type: vless
+  server: 155.117.5.208
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,6 +113,7 @@ proxy-groups:
   - 🇵🇱 PL 08 - wwc503
   - 🇵🇱 PL 09 - wwc503
   - 🇵🇱 PL 10 - wwc503
+  - 🇵🇱 PL 11 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -117,5 +129,6 @@ proxy-groups:
   - 🇵🇱 PL 08 - wwc503
   - 🇵🇱 PL 09 - wwc503
   - 🇵🇱 PL 10 - wwc503
+  - 🇵🇱 PL 11 - wwc503
 rules:
 - MATCH,PROXIES
