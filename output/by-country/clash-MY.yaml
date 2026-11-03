@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - wwc503
+- name: 🇲🇾 MY 01 - wwc503
   type: ss
-  server: b2friday.buzrel.ir
-  port: 443
-  cipher: aes-256-gcm
-  password: 6lb9wr4ibspbl022
+  server: xunlinknode.csdjhajkshdjkas.com
+  port: 40006
+  cipher: chacha20-ietf-poly1305
+  password: 28789988-887e-4e41-83cd-27bbfb7999ad
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - wwc503
+  - 🇲🇾 MY 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - wwc503
+  - 🇲🇾 MY 01 - wwc503
 rules:
 - MATCH,PROXIES
