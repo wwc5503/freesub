@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - wwc503
-  type: ss
-  server: xunlinknode.csdjhajkshdjkas.com
-  port: 40006
-  cipher: chacha20-ietf-poly1305
-  password: 28789988-887e-4e41-83cd-27bbfb7999ad
+  type: vless
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
