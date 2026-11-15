@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - wwc503
+- name: 🇹🇭 TH 01 - wwc503
   type: vless
-  server: 192.71.27.237
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  server: assets.opensignal.com
+  port: 80
+  uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /
+    path: /logout
     headers:
-      Host: fs.qicai99.com
+      Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - wwc503
+  - 🇹🇭 TH 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - wwc503
+  - 🇹🇭 TH 01 - wwc503
 rules:
 - MATCH,PROXIES

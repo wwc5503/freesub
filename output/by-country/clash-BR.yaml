@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 GE 01 - wwc503
-  type: vless
-  server: 194.135.119.82
-  port: 2053
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+- name: 🇧🇷 BR 01 - wwc503
+  type: vmess
+  server: 103.14.27.207
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
+  servername: None
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇪 GE 01 - wwc503
+  - 🇧🇷 BR 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇪 GE 01 - wwc503
+  - 🇧🇷 BR 01 - wwc503
 rules:
 - MATCH,PROXIES
