@@ -9,7 +9,7 @@ proxies:
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - wwc503
   type: ss
