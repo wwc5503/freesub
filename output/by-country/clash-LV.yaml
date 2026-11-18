@@ -4,25 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 CY 01 - wwc503
+- name: 🇱🇻 LV 01 - wwc503
   type: vless
-  server: 45.86.60.174
-  port: 16443
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
+  server: 46.8.64.51
+  port: 443
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: clover.filnex.baby
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 CY 01 - wwc503
+  - 🇱🇻 LV 01 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 CY 01 - wwc503
+  - 🇱🇻 LV 01 - wwc503
 rules:
 - MATCH,PROXIES
