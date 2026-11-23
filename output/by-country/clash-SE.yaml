@@ -5,19 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - wwc503
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 16f63796-3e98-5a7b-b016-540ce6e79007
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: se1.v2less.site
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: se1.v2less.site
+  servername: xmfhlpy.com
 - name: 🇸🇪 SE 02 - wwc503
   type: vless
   server: 5.178.109.174
@@ -32,12 +29,40 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 03 - wwc503
+  type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
+- name: 🇸🇪 SE 04 - wwc503
   type: ss
   server: 138.199.55.243
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇸🇪 SE 05 - wwc503
+  type: vless
+  server: 77.232.143.142
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: volumestyle.komediyatorg.net
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: 77.232.143.142
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +71,8 @@ proxy-groups:
   - 🇸🇪 SE 01 - wwc503
   - 🇸🇪 SE 02 - wwc503
   - 🇸🇪 SE 03 - wwc503
+  - 🇸🇪 SE 04 - wwc503
+  - 🇸🇪 SE 05 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +81,7 @@ proxy-groups:
   - 🇸🇪 SE 01 - wwc503
   - 🇸🇪 SE 02 - wwc503
   - 🇸🇪 SE 03 - wwc503
+  - 🇸🇪 SE 04 - wwc503
+  - 🇸🇪 SE 05 - wwc503
 rules:
 - MATCH,PROXIES
