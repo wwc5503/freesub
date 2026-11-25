@@ -6,158 +6,165 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - wwc503
   type: vless
-  server: 104.27.97.42
-  port: 8443
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
+  server: 172.64.155.209
+  port: 443
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: free.sahanwickramasinghe.com
+  servername: sinavm2.soft10.ir
   network: ws
   ws-opts:
-    path: /
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
-      Host: free.sahanwickramasinghe.com
+      Host: sinavm2.soft10.ir
 - name: 🌐 其他地区 (Other) 02 - wwc503
   type: vless
-  server: 172.64.154.113
-  port: 8443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  server: 104.18.42.98
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: freeceshi6.frii.site
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /tyxyws
     headers:
-      Host: freeceshi6.frii.site
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - wwc503
   type: vless
-  server: 104.21.94.203
+  server: 104.16.10.185
   port: 443
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fr-free.fastestrelay.com
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /700gvl
+    path: /tyxyws
     headers:
-      Host: fr-free.fastestrelay.com
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 04 - wwc503
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: chatgpt.com
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /lMnsZUN4/
     headers:
-      Host: jp3.yohototo.top
+      Host: v2ray1.dozapp.xyz
 - name: 🌐 其他地区 (Other) 05 - wwc503
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 104.18.0.1
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /lMnsZUN4/
     headers:
-      Host: jp3.yohototo.top
+      Host: v2ray1.dozapp.xyz
 - name: 🌐 其他地区 (Other) 06 - wwc503
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 172.67.187.145
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /ws
     headers:
-      Host: jp3.yohototo.top
+      Host: vmess.lbw666.dpdns.org
 - name: 🌐 其他地区 (Other) 07 - wwc503
   type: vless
-  server: 104.21.0.87
+  server: 104.18.32.47
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: sinavm2.soft10.ir
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
-      Host: jp3.yohototo.top
+      Host: sinavm2.soft10.ir
 - name: 🌐 其他地区 (Other) 08 - wwc503
-  type: vless
-  server: 104.17.210.74
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  server: 104.21.91.53
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /lMnsZUN4/
     headers:
-      Host: jp3.yohototo.top
+      Host: v2ray1.dozapp.xyz
 - name: 🌐 其他地区 (Other) 09 - wwc503
   type: vless
-  server: 172.67.139.189
+  server: 172.64.155.209
   port: 443
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fr-free.fastestrelay.com
+  servername: sinavm2.soft10.ir
   network: ws
   ws-opts:
-    path: /700gvl
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
-      Host: fr-free.fastestrelay.com
+      Host: sinavm2.soft10.ir
 - name: 🌐 其他地区 (Other) 10 - wwc503
   type: vless
-  server: 172.67.217.240
+  server: 104.18.32.47
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: sinavm2.soft10.ir
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
-      Host: jp3.yohototo.top
+      Host: sinavm2.soft10.ir
 - name: 🌐 其他地区 (Other) 11 - wwc503
   type: vless
-  server: 172.67.217.240
+  server: 172.64.155.209
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: sinavm3.soft10.ir
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
-      Host: jp3.yohototo.top
+      Host: sinavm3.soft10.ir
 - name: 🌐 其他地区 (Other) 12 - wwc503
   type: vless
   server: 172.64.155.209
@@ -174,18 +181,18 @@ proxies:
       Host: sinavm2.soft10.ir
 - name: 🌐 其他地区 (Other) 13 - wwc503
   type: vless
-  server: 104.21.219.160
+  server: 188.114.98.0
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: payablemeta.cleanfoodshop.org
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /media/ws/
     headers:
-      Host: jp3.yohototo.top
+      Host: payablemeta.cleanfoodshop.org
 - name: 🌐 其他地区 (Other) 14 - wwc503
   type: vless
   server: 172.67.217.240
@@ -202,23 +209,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 15 - wwc503
   type: vmess
-  server: 172.64.229.21
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vmess.lbw666.dpdns.org
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 16 - wwc503
-  type: vmess
-  server: 188.114.96.3
+  server: 104.21.0.1
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -232,21 +223,21 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 17 - wwc503
+- name: 🌐 其他地区 (Other) 16 - wwc503
   type: vless
-  server: 104.27.46.35
+  server: 172.67.139.189
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: fr-free.fastestrelay.com
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /700gvl
     headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - wwc503
+      Host: fr-free.fastestrelay.com
+- name: 🌐 其他地区 (Other) 17 - wwc503
   type: vless
   server: 104.16.10.234
   port: 443
@@ -260,159 +251,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 19 - wwc503
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 20 - wwc503
-  type: vless
-  server: 104.21.219.160
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 21 - wwc503
-  type: vless
-  server: 104.16.10.135
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 22 - wwc503
-  type: vless
-  server: 104.18.42.98
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 23 - wwc503
-  type: vless
-  server: 104.16.10.63
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 24 - wwc503
-  type: vless
-  server: 104.21.70.21
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 25 - wwc503
-  type: vless
-  server: 172.64.154.113
-  port: 8443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: freeceshi6.frii.site
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
-    headers:
-      Host: freeceshi6.frii.site
-- name: 🌐 其他地区 (Other) 26 - wwc503
-  type: vless
-  server: 104.16.10.48
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 27 - wwc503
-  type: vless
-  server: 104.24.31.89
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 28 - wwc503
-  type: vless
-  server: 104.21.94.203
-  port: 443
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr-free.fastestrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: 🌐 其他地区 (Other) 29 - wwc503
-  type: vless
-  server: 188.114.99.137
-  port: 80
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -435,18 +273,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 15 - wwc503
   - 🌐 其他地区 (Other) 16 - wwc503
   - 🌐 其他地区 (Other) 17 - wwc503
-  - 🌐 其他地区 (Other) 18 - wwc503
-  - 🌐 其他地区 (Other) 19 - wwc503
-  - 🌐 其他地区 (Other) 20 - wwc503
-  - 🌐 其他地区 (Other) 21 - wwc503
-  - 🌐 其他地区 (Other) 22 - wwc503
-  - 🌐 其他地区 (Other) 23 - wwc503
-  - 🌐 其他地区 (Other) 24 - wwc503
-  - 🌐 其他地区 (Other) 25 - wwc503
-  - 🌐 其他地区 (Other) 26 - wwc503
-  - 🌐 其他地区 (Other) 27 - wwc503
-  - 🌐 其他地区 (Other) 28 - wwc503
-  - 🌐 其他地区 (Other) 29 - wwc503
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -469,17 +295,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 15 - wwc503
   - 🌐 其他地区 (Other) 16 - wwc503
   - 🌐 其他地区 (Other) 17 - wwc503
-  - 🌐 其他地区 (Other) 18 - wwc503
-  - 🌐 其他地区 (Other) 19 - wwc503
-  - 🌐 其他地区 (Other) 20 - wwc503
-  - 🌐 其他地区 (Other) 21 - wwc503
-  - 🌐 其他地区 (Other) 22 - wwc503
-  - 🌐 其他地区 (Other) 23 - wwc503
-  - 🌐 其他地区 (Other) 24 - wwc503
-  - 🌐 其他地区 (Other) 25 - wwc503
-  - 🌐 其他地区 (Other) 26 - wwc503
-  - 🌐 其他地区 (Other) 27 - wwc503
-  - 🌐 其他地区 (Other) 28 - wwc503
-  - 🌐 其他地区 (Other) 29 - wwc503
 rules:
 - MATCH,PROXIES
