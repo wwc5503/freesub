@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - wwc503",
-        "🇹🇭 TH 02 - wwc503",
-        "🇹🇭 TH 03 - wwc503"
+        "🇫🇮 FI 01 - wwc503"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - wwc503",
-        "🇹🇭 TH 02 - wwc503",
-        "🇹🇭 TH 03 - wwc503"
+        "🇫🇮 FI 01 - wwc503"
       ],
       "url": "https://www.google.com/generate_204"
     },
